@@ -842,6 +842,233 @@ else:
     print("Thank you for Shopping with us, Enjoy discounts from 5% to 20% for amount more than ₹500")
 
 
+# ### Loops Statements 
+# 1)While Loop  
+# 2)For Loop  
+# 3)Nested Loops   
+# 4)Loop Control ( Break, Continue, Pass) 
+
+# In[2]:
+
+
+# While Loop , While Else
+
+joining_age=25
+while joining_age<=60:
+    print(joining_age)
+    joining_age=joining_age+1
+else: 
+    print("It is time to retire")
+    
+
+
+# In[6]:
+
+
+### ATM Machine example for While 
+
+total_amount=1000
+while total_amount!=0: # NOT EQUAL TO IS WRITTEN AS !=
+    total_amount=total_amount-500
+    print(total_amount)
+else:
+    print("ATM out of Money")
+
+
+# In[13]:
+
+
+## for loop
+
+sample = ["Kratos","Dante","Zeus","Vergil"]
+
+for x in sample:
+    print(x)
+
+
+# In[25]:
+
+
+fruits_list =["Mango","Banana","Apple","Cherry"]
+
+for a in fruits_list:
+    print(a)
+    if a=="Banana":
+        print("bannnanaaa")
+
+
+# In[26]:
+
+
+# Break
+
+fruits_list =["Mango","Banana","Apple","Cherry"]
+
+for a in fruits_list:
+    print(a)
+    if a=="Banana": #every if statement has to end with a '':'', : indicates that we are done with applying condition 
+        break #this has to be indentated inside the if statement
+
+
+# In[27]:
+
+
+fruit = "Mango"
+for i in fruit:
+    print(i)
+
+
+# In[31]:
+
+
+fruit[0]
+
+
+# In[33]:
+
+
+fruit = "Mango"
+for i in fruit:
+    print(i,end=' ') #end='' helps to print result in one line
+
+
+# In[34]:
+
+
+### Nested for loop and range 
+
+range(1,6)
+
+
+# In[36]:
+
+
+for i in range(1,10): #range has a start and end parameter and a step as a third parameter, start means from where the number starts, step means skip
+    print(i)
+
+
+# In[37]:
+
+
+for i in range(1,10,2):
+    print(i)
+
+
+# In[3]:
+
+
+# Nested loops
+
+n=7
+
+for i in range(0,n):
+    print(i)
+
+
+# In[14]:
+
+
+n=9
+for i in range(0,n):
+    for j in range(0,i+1):
+        print("*",end="")
+    print("\r")
+
+
+# In[17]:
+
+
+n = 5
+for i in range(0, n):  # loop through rows
+    for j in range(n-i-1): # loop through spaces
+        print(" ", end="") # print space and end with empty string
+    for k in range(2 * i + 1): # loop through asterisks
+        print("*", end="") # print asterisk and end with empty string
+    print("\r") # move to next line
+
+
+# In[28]:
+
+
+n = 5
+for i in range(0, n):
+    print(" ", end="") # print space and end with empty string
+
+
+# In[29]:
+
+
+n = 5
+for i in range(0, n):  # loop through rows
+    for j in range(n-i-1): # loop through spaces
+        print(" ", end="") # print space and end with empty string
+
+
+# In[30]:
+
+
+for k in range(2 * i + 1): # loop through asterisks
+       print("*", end="") # print asterisk and end with empty string
+
+
+# In[31]:
+
+
+n = 5
+for i in range(0, n):  # loop through rows
+    for j in range(n-i-1): # loop through spaces
+        print(" ", end="") # print space and end with empty string
+    for k in range(2 * i + 1): # loop through asterisks
+        print("*", end="") # print asterisk and end with empty string
+
+
+# In[32]:
+
+
+n = 5
+for i in range(0, n):  # loop through rows
+    for j in range(n-i-1): # loop through spaces
+        print(" ", end="") # print space and end with empty string
+    for k in range(2 * i + 1): # loop through asterisks
+        print("*", end="") # print asterisk and end with empty string
+    print("\r") # move to next line
+
+
+# In[34]:
+
+
+fruits_list =["Mango","Banana","Apple","Cherry"]
+
+for i in fruits_list:
+    if i=="Apple":
+        print("The fruit is apple")
+        break
+    print(i)
+
+
+# In[35]:
+
+
+fruits_list =["Mango","Banana","Apple","Cherry"]
+
+for i in fruits_list:
+    if i=="Apple":
+        print("The fruit is apple")
+        pass
+    print(i)
+
+
+# In[37]:
+
+
+fruits_list =["Mango","Banana","Apple","Cherry"]
+
+for i in fruits_list:
+    if i=="Apple":
+        continue
+    print(i)
+
+
 # In[ ]:
 
 
